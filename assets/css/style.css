@@ -10,14 +10,9 @@ body {
   transition: background-color 0.4s;
 }
 
-#theme {
-  border: none;
-  background: none;
-  margin: 0 auto;
-}
 .wrapper {
-  height: 100vh;
-  width: 100vw;
+  margin: 10px 0;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   transition: background-color 0.5s;
@@ -37,7 +32,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.137);
   transition: color 0.5s, background-color 0.5s;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .centerDiv {
     width: 300px;
   }
@@ -48,7 +43,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .centerDiv .greetings {
     flex-wrap: wrap;
   }
@@ -61,7 +56,7 @@ body {
   font-size: 55px;
   margin-top: 50px;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .centerDiv .greetings h1 {
     font-size: 43px;
     margin-top: 10px;
@@ -74,7 +69,7 @@ body {
   text-align: center;
   margin-top: 20px;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .centerDiv .about {
     flex-wrap: wrap;
   }
@@ -85,7 +80,7 @@ body {
   font-weight: 500;
   padding-bottom: 20px;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .centerDiv .about p {
     font-size: 32px;
     padding: 0 5px;
@@ -96,7 +91,7 @@ body {
   width: 175px;
   margin-top: -30px;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .centerDiv .about img {
     margin-top: 0px;
     width: 160px;
@@ -111,7 +106,7 @@ body {
   justify-content: center;
   margin: 30px auto;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .centerDiv .links {
     padding-top: 14px;
     border-top: 1px dashed rgba(0, 0, 0, 0.103);
@@ -121,7 +116,7 @@ body {
   transition-duration: 0.4s;
   margin: 0 20px;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .centerDiv .links a {
     margin: 0 14px;
   }
@@ -132,10 +127,27 @@ body {
 .centerDiv .links img {
   width: 70px;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .centerDiv .links img {
     width: 50px;
   }
+}
+.centerDiv .links #theme {
+  margin: 0 20px;
+  background: none;
+  transition-duration: 0.4s;
+}
+@media (max-width: 400px) {
+  .centerDiv .links #theme {
+    margin: 0 14px;
+  }
+}
+.centerDiv .links #theme:hover {
+  transform: translateY(-15px);
+}
+.centerDiv .links #theme .myImg {
+  border: 2px solid #52666f;
+  border-radius: 50%;
 }
 
 .dark {
