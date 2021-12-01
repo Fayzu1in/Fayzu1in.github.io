@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  transition: background-color 0.4s;
+}
+
+#theme {
+  border: none;
+  background: none;
+  margin: 0 auto;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.centerDiv {
+  width: 900px;
+  max-width: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 15px, rgba(255, 255, 255, 0.2) -5px -5px 15px;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  transition: color 0.5s, background-color 0.5s;
+}
+@media (max-width: 375px) {
+  .centerDiv {
+    width: 300px;
+  }
+}
+.centerDiv .greetings {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 375px) {
+  .centerDiv .greetings {
+    flex-wrap: wrap;
+  }
+}
+.centerDiv .greetings img {
+  width: 200px;
+}
+.centerDiv .greetings h1 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 55px;
+  margin-top: 50px;
+}
+@media (max-width: 375px) {
+  .centerDiv .greetings h1 {
+    font-size: 43px;
+    margin-top: 10px;
+  }
+}
+.centerDiv .about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  margin-top: 20px;
+}
+@media (max-width: 375px) {
+  .centerDiv .about {
+    flex-wrap: wrap;
+  }
+}
+.centerDiv .about p {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+@media (max-width: 375px) {
+  .centerDiv .about p {
+    font-size: 32px;
+    padding: 0 5px;
+    margin-top: -10px;
+  }
+}
+.centerDiv .about img {
+  width: 175px;
+  margin-top: -30px;
+}
+@media (max-width: 375px) {
+  .centerDiv .about img {
+    margin-top: 0px;
+    width: 160px;
+  }
+}
+.centerDiv .links {
+  border-top: 2px dashed rgba(0, 0, 0, 0.205);
+  padding-top: 30px;
+  width: 400px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+@media (max-width: 375px) {
+  .centerDiv .links {
+    padding-top: 14px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.103);
+  }
+}
+.centerDiv .links a {
+  transition-duration: 0.4s;
+  margin: 0 20px;
+}
+@media (max-width: 375px) {
+  .centerDiv .links a {
+    margin: 0 14px;
+  }
+}
+.centerDiv .links a:hover {
+  transform: translateY(-15px);
+}
+.centerDiv .links img {
+  width: 70px;
+}
+@media (max-width: 375px) {
+  .centerDiv .links img {
+    width: 50px;
+  }
+}
+
+.dark {
+  background-color: #221f1f;
+}
+.dark .centerDiv {
+  background-color: #221f1f;
+  color: white;
+}
