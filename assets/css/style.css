@@ -21,6 +21,7 @@ body {
   position: relative;
 }
 .wrapper footer {
+  margin-top: 50px;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -52,6 +53,7 @@ body {
   border-radius: 25px;
   border: 1px solid rgba(0, 0, 0, 0.137);
   transition: color 0.5s, background-color 0.5s;
+  margin-bottom: 40px;
 }
 .centerDiv .homer {
   display: block;
