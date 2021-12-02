@@ -36,6 +36,16 @@ body {
   @media (max-width: 420px) {
     width: 300px;
   }
+  .homer {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -94px;
+    @media (max-width: 450px) {
+      width: 250px;
+      margin-bottom: -85px;
+      padding-top: 20px;
+    }
+  }
 
   .greetings {
     text-align: center;
@@ -93,7 +103,7 @@ body {
 
   .links {
     border-top: 2px dashed rgba(0, 0, 0, 0.205);
-    padding-top: 30px;
+    padding-top: 20px;
     width: 400px;
     max-width: 100%;
     display: flex;
