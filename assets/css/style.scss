@@ -160,5 +160,9 @@ body {
   }
   .links {
     border-top: 2px dashed #b4b6ba;
+    @media (max-width: 425px) {
+      padding-top: 14px;
+      border-top: 1px dashed #6d6e70;
+    }
   }
 }
