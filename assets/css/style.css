@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
@@ -11,16 +12,36 @@ body {
 }
 
 .wrapper {
-  margin: 10px 0;
   min-height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
   transition: background-color 0.5s;
+  flex-direction: column;
+  position: relative;
+}
+.wrapper footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.wrapper footer .copy {
+  line-height: 20px;
+}
+.wrapper footer .mail {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fe615e;
 }
 
 .container {
   margin: 0 auto;
   max-width: 100%;
+  padding: 10px;
 }
 
 .centerDiv {
@@ -31,11 +52,6 @@ body {
   border-radius: 25px;
   border: 1px solid rgba(0, 0, 0, 0.137);
   transition: color 0.5s, background-color 0.5s;
-}
-@media (max-width: 425px) {
-  .centerDiv {
-    width: 300px;
-  }
 }
 .centerDiv .homer {
   display: block;
@@ -116,6 +132,7 @@ body {
   max-width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 30px auto;
 }
 @media (max-width: 425px) {
@@ -145,9 +162,24 @@ body {
   }
 }
 .centerDiv .links #theme {
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
   margin: 0 20px;
-  background: none;
+  background: url(/assets/img/half-moon.png) center no-repeat;
+  background-size: contain;
+  cursor: pointer;
   transition-duration: 0.4s;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  flex-shrink: 0;
+}
+@media (max-width: 425px) {
+  .centerDiv .links #theme {
+    width: 50px;
+    height: 70px;
+  }
 }
 @media (max-width: 425px) {
   .centerDiv .links #theme {
@@ -156,10 +188,6 @@ body {
 }
 .centerDiv .links #theme:hover {
   transform: translateY(-15px);
-}
-.centerDiv .links #theme .myImg {
-  border: 2px solid #52666f;
-  border-radius: 50%;
 }
 
 .dark {
@@ -177,4 +205,14 @@ body {
     padding-top: 14px;
     border-top: 1px dashed #6d6e70;
   }
+}
+.dark .links #theme {
+  background: url(/assets/img/lightbulb.png) center no-repeat;
+  background-size: contain;
+}
+.dark .wrapper footer .copy {
+  color: white;
+}
+.dark .wrapper footer .id {
+  color: white;
 }
